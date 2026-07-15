@@ -1,6 +1,6 @@
-# AI Educators Pilot — Workshop Showcase
+# AI Website Workshop — Showcase
 
-A responsive, accessible workshop website for **Hands-On: Creating a Personal Financial Planning Web App**, presented at MIT on July 16, 2026.
+A responsive, accessible workshop website for **Hands-On: Creating a Personal Financial Planning Web App**.
 
 The site documents the two-prompt workflow used in the demonstration and includes two blind comparison activities. Participants compare seven anonymously labeled websites (A–G), then five anonymously labeled effort variants (1–5), without seeing which system or setting produced each result.
 
@@ -12,7 +12,7 @@ The private label-to-system mapping is intentionally not stored in this reposito
 - `styles.css` — responsive visual design
 - `script.js` — copy-to-clipboard interaction
 - `.nojekyll` — tells GitHub Pages to serve the site as plain static files
-- `LICENSE` — MIT open-source license
+- `LICENSE` — open-source license
 
 ## Preview locally
 
