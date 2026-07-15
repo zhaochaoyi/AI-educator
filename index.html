@@ -15,7 +15,7 @@
       href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@600;700;800&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="styles.css?v=4" />
     <script src="script.js?v=3" defer></script>
   </head>
   <body>
@@ -28,7 +28,9 @@
       </a>
       <nav aria-label="Main navigation">
         <a href="#process">The process</a>
-        <a href="#gallery">Explore the apps</a>
+        <a href="#model-comparison">Activity 1</a>
+        <a href="#effort-comparison">Activity 2</a>
+        <a href="#discussion">Discussion</a>
       </nav>
     </header>
 
@@ -41,7 +43,7 @@
             One idea. One shared prompt. Seven working websites—built by AI coding agents.
           </p>
           <div class="hero-actions">
-            <a class="button button-primary" href="#gallery">Explore all 7 apps</a>
+            <a class="button button-primary" href="#model-comparison">Start the comparison</a>
             <a class="button button-secondary" href="#process">See how we got there</a>
           </div>
         </div>
@@ -62,7 +64,7 @@
           <div class="journey-card journey-apps">
             <span class="journey-number">03</span>
             <strong>Compare the results</strong>
-            <small>7 models · 7 interpretations</small>
+            <small>Two blind comparison activities</small>
           </div>
         </div>
       </section>
@@ -73,8 +75,9 @@
         <p>
           This hands-on demonstration follows a simple workflow anyone can repeat: describe what you
           want to build, improve the request with an AI assistant, then give the same detailed prompt
-          to several coding agents. Open the results below and look for differences in design,
-          usability, calculations, and interpretation.
+          to several coding agents. In the two blind activities below, look for differences in
+          design, usability, calculations, and interpretation before discussing what may have
+          shaped those differences.
         </p>
       </section>
 
@@ -249,62 +252,69 @@ Start by briefly outlining your implementation plan, and then create the complet
       <section class="gallery-section" id="gallery" aria-labelledby="gallery-title">
         <div class="gallery-heading">
           <div>
-            <p class="section-kicker">The results</p>
-            <h2 id="gallery-title">Same prompt. Seven interpretations.</h2>
+            <p class="section-kicker">Blind comparison · Activity 1</p>
+            <h2 id="gallery-title">How do the seven websites differ?</h2>
           </div>
-          <p>Open each live app in a new tab and compare how the models made decisions.</p>
+          <p>Open A–G in new tabs. The labels are anonymous, so focus only on what you observe.</p>
         </div>
 
-        <div class="model-grid">
-          <a class="model-card featured" href="https://zhaochaoyi.github.io/AI-educator-GPT5.6Sol-Medium/" target="_blank" rel="noopener noreferrer">
-            <div class="model-topline"><span class="builder">Built with Codex</span><span class="external" aria-hidden="true">↗</span></div>
-            <div class="model-orb orb-blue">5.6</div>
-            <h3>GPT-5.6</h3><p>Medium reasoning</p><span class="visit">Launch planner <b>→</b></span>
-          </a>
-          <a class="model-card" href="https://zhaochaoyi.github.io/AI-educator-GPT5.5-Medium/" target="_blank" rel="noopener noreferrer">
-            <div class="model-topline"><span class="builder">Built with Codex</span><span class="external" aria-hidden="true">↗</span></div>
-            <div class="model-orb orb-cyan">5.5</div>
-            <h3>GPT-5.5</h3><p>Medium reasoning</p><span class="visit">Launch planner <b>→</b></span>
-          </a>
-          <a class="model-card" href="https://zhaochaoyi.github.io/AI-educator-GPT5.4-Medium/" target="_blank" rel="noopener noreferrer">
-            <div class="model-topline"><span class="builder">Built with Codex</span><span class="external" aria-hidden="true">↗</span></div>
-            <div class="model-orb orb-teal">5.4</div>
-            <h3>GPT-5.4</h3><p>Medium reasoning</p><span class="visit">Launch planner <b>→</b></span>
-          </a>
-          <a class="model-card" href="https://zhaochaoyi.github.io/AI-educator-Fable5-Medium/" target="_blank" rel="noopener noreferrer">
-            <div class="model-topline"><span class="builder">Built with Claude Code</span><span class="external" aria-hidden="true">↗</span></div>
-            <div class="model-orb orb-coral">F5</div>
-            <h3>Fable 5</h3><p>Medium reasoning</p><span class="visit">Launch planner <b>→</b></span>
-          </a>
-          <a class="model-card" href="https://zhaochaoyi.github.io/AI-educator-Sonnet5-Medium/" target="_blank" rel="noopener noreferrer">
-            <div class="model-topline"><span class="builder">Built with Claude Code</span><span class="external" aria-hidden="true">↗</span></div>
-            <div class="model-orb orb-violet">S5</div>
-            <h3>Sonnet 5</h3><p>Medium reasoning</p><span class="visit">Launch planner <b>→</b></span>
-          </a>
-          <a class="model-card" href="https://zhaochaoyi.github.io/AI-educator-Opus4.8-Medium/" target="_blank" rel="noopener noreferrer">
-            <div class="model-topline"><span class="builder">Built with Claude Code</span><span class="external" aria-hidden="true">↗</span></div>
-            <div class="model-orb orb-gold">4.8</div>
-            <h3>Opus 4.8</h3><p>Medium reasoning</p><span class="visit">Launch planner <b>→</b></span>
-          </a>
-          <a class="model-card" href="https://zhaochaoyi.github.io/AI-educator-Haiku4.5/" target="_blank" rel="noopener noreferrer">
-            <div class="model-topline"><span class="builder">Built with Claude Code</span><span class="external" aria-hidden="true">↗</span></div>
-            <div class="model-orb orb-rose">4.5</div>
-            <h3>Haiku 4.5</h3><p>Default reasoning</p><span class="visit">Launch planner <b>→</b></span>
-          </a>
+        <div class="activity-panel" id="model-comparison" aria-label="Activity 1: compare seven anonymous websites">
+          <div class="activity-instructions">
+            <span class="activity-number">1</span>
+            <div>
+              <h3>Compare A–G</h3>
+              <p>Try the same inputs in several planners. Notice the layout, wording, assumptions, charts, and overall ease of use.</p>
+            </div>
+          </div>
+          <div class="choice-grid choice-grid-seven">
+            <a class="choice-card" href="https://zhaochaoyi.github.io/personal-financial-planning-a1/" target="_blank" rel="noopener noreferrer" aria-label="Open anonymous website A in a new tab"><span class="choice-label orb-rose">A</span><span class="choice-action">Open website <b aria-hidden="true">↗</b></span></a>
+            <a class="choice-card" href="https://zhaochaoyi.github.io/personal-financial-planning-b1/" target="_blank" rel="noopener noreferrer" aria-label="Open anonymous website B in a new tab"><span class="choice-label orb-teal">B</span><span class="choice-action">Open website <b aria-hidden="true">↗</b></span></a>
+            <a class="choice-card" href="https://zhaochaoyi.github.io/personal-financial-planning-c1/" target="_blank" rel="noopener noreferrer" aria-label="Open anonymous website C in a new tab"><span class="choice-label orb-blue">C</span><span class="choice-action">Open website <b aria-hidden="true">↗</b></span></a>
+            <a class="choice-card" href="https://zhaochaoyi.github.io/personal-financial-planning-d1/" target="_blank" rel="noopener noreferrer" aria-label="Open anonymous website D in a new tab"><span class="choice-label orb-gold">D</span><span class="choice-action">Open website <b aria-hidden="true">↗</b></span></a>
+            <a class="choice-card" href="https://zhaochaoyi.github.io/personal-financial-planning-e1/" target="_blank" rel="noopener noreferrer" aria-label="Open anonymous website E in a new tab"><span class="choice-label orb-coral">E</span><span class="choice-action">Open website <b aria-hidden="true">↗</b></span></a>
+            <a class="choice-card" href="https://zhaochaoyi.github.io/personal-financial-planning-f1/" target="_blank" rel="noopener noreferrer" aria-label="Open anonymous website F in a new tab"><span class="choice-label orb-cyan">F</span><span class="choice-action">Open website <b aria-hidden="true">↗</b></span></a>
+            <a class="choice-card" href="https://zhaochaoyi.github.io/personal-financial-planning-g1/" target="_blank" rel="noopener noreferrer" aria-label="Open anonymous website G in a new tab"><span class="choice-label orb-violet">G</span><span class="choice-action">Open website <b aria-hidden="true">↗</b></span></a>
+          </div>
         </div>
 
-        <aside class="discussion" aria-labelledby="discussion-title">
-          <div class="discussion-number">3</div>
+        <div class="gallery-heading effort-heading">
           <div>
-            <p class="section-kicker">Discuss together</p>
-            <h2 id="discussion-title">What did the models decide for us?</h2>
+            <p class="section-kicker">Blind comparison · Activity 2</p>
+            <h2 id="effort-title">What changes with different effort levels?</h2>
           </div>
-          <ul>
-            <li>Which app makes the financial assumptions easiest to understand?</li>
-            <li>Where do the designs or calculations differ?</li>
-            <li>What would you ask the coding agent to improve next?</li>
-          </ul>
-        </aside>
+          <p>Open 1–5 in new tabs. The labels do not indicate an order or quality ranking.</p>
+        </div>
+
+        <div class="activity-panel" id="effort-comparison" aria-labelledby="effort-title">
+          <div class="activity-instructions">
+            <span class="activity-number">2</span>
+            <div>
+              <h3>Compare 1–5</h3>
+              <p>Look for changes in completeness, polish, structure, and usability. Decide whether more visible complexity produces a better experience.</p>
+            </div>
+          </div>
+          <div class="choice-grid choice-grid-five">
+            <a class="choice-card" href="https://zhaochaoyi.github.io/personal-financial-planning-c1/" target="_blank" rel="noopener noreferrer" aria-label="Open anonymous website 1 in a new tab"><span class="choice-label number-one">1</span><span class="choice-action">Open website <b aria-hidden="true">↗</b></span></a>
+            <a class="choice-card" href="https://zhaochaoyi.github.io/personal-financial-planning-c2/" target="_blank" rel="noopener noreferrer" aria-label="Open anonymous website 2 in a new tab"><span class="choice-label number-two">2</span><span class="choice-action">Open website <b aria-hidden="true">↗</b></span></a>
+            <a class="choice-card" href="https://zhaochaoyi.github.io/personal-financial-planning-c3/" target="_blank" rel="noopener noreferrer" aria-label="Open anonymous website 3 in a new tab"><span class="choice-label number-three">3</span><span class="choice-action">Open website <b aria-hidden="true">↗</b></span></a>
+            <a class="choice-card" href="https://zhaochaoyi.github.io/personal-financial-planning-c4/" target="_blank" rel="noopener noreferrer" aria-label="Open anonymous website 4 in a new tab"><span class="choice-label number-four">4</span><span class="choice-action">Open website <b aria-hidden="true">↗</b></span></a>
+            <a class="choice-card" href="https://zhaochaoyi.github.io/personal-financial-planning-c5/" target="_blank" rel="noopener noreferrer" aria-label="Open anonymous website 5 in a new tab"><span class="choice-label number-five">5</span><span class="choice-action">Open website <b aria-hidden="true">↗</b></span></a>
+          </div>
+        </div>
+
+        <section class="discussion" id="discussion" aria-labelledby="discussion-title">
+          <div class="discussion-heading">
+            <p class="section-kicker">Discuss together</p>
+            <h2 id="discussion-title">Patterns worth teaching</h2>
+            <p>After both blind comparisons, connect your observations to these four takeaways.</p>
+          </div>
+          <div class="discussion-grid">
+            <article class="discussion-item"><span class="discussion-icon icon-check" aria-hidden="true">✓</span><div><h3>Every frontier model clears the bar</h3><p>All of them produce a working site from this prompt. The differences are in polish, structure, speed, and cost—not in “can it do it.”</p></div></article>
+            <article class="discussion-item"><span class="discussion-icon icon-swap" aria-hidden="true">↔</span><div><h3>Newer ≠ uniformly better</h3><p>A newer version may be slower or spend more tokens for a similar result. Match the tool to the task, not to the release date.</p></div></article>
+            <article class="discussion-item"><span class="discussion-icon icon-eye" aria-hidden="true">◉</span><div><h3>Models have taste</h3><p>The same specification leads to visibly different design decisions—including color, layout, and wording.</p></div></article>
+            <article class="discussion-item"><span class="discussion-icon icon-cost" aria-hidden="true">●</span><div><h3>Cost scales with “thinking”</h3><p>Higher effort settings and bigger models buy depth with time and tokens. For a one-page static site, medium effort is often plenty.</p></div></article>
+          </div>
+        </section>
       </section>
     </main>
 

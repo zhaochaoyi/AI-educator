@@ -2,7 +2,9 @@
 
 A responsive, accessible workshop website for **Hands-On: Creating a Personal Financial Planning Web App**, presented at MIT on July 16, 2026.
 
-The site documents the two-prompt workflow used in the demonstration and links to seven live financial-planning apps created by different AI models using the same build specification.
+The site documents the two-prompt workflow used in the demonstration and includes two blind comparison activities. Participants compare seven anonymously labeled websites (A–G), then five anonymously labeled effort variants (1–5), without seeing which system or setting produced each result.
+
+The private label-to-system mapping is intentionally not stored in this repository.
 
 ## Files
 
