@@ -2,7 +2,7 @@
 
 A responsive, accessible workshop website for **Hands-On: Creating a Personal Financial Planning Web App**.
 
-The site documents the two-prompt workflow used in the demonstration and includes two blind comparison activities. Participants compare seven anonymously labeled websites (A–G), then five anonymously labeled effort variants (1–5), without seeing which system or setting produced each result.
+The site documents the two-prompt workflow used in the demonstration and includes two blind comparison activities. Participants compare anonymously labeled websites A–G, then effort variants 1–5, without seeing which system or setting produced each result.
 
 The private label-to-system mapping is intentionally not stored in this repository.
 
