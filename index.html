@@ -1,0 +1,318 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="A workshop showcase comparing seven AI-built personal financial planning web apps."
+    />
+    <meta name="theme-color" content="#102a43" />
+    <title>Hands-On: Creating a Personal Financial Planning Web App</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to main content</a>
+
+    <header class="site-header">
+      <a class="brand" href="#top" aria-label="AI Educators Pilot home">
+        <span class="brand-mark" aria-hidden="true">AI</span>
+        <span>AI Educators Pilot</span>
+      </a>
+      <nav aria-label="Main navigation">
+        <a href="#process">The process</a>
+        <a href="#gallery">Explore the apps</a>
+      </nav>
+    </header>
+
+    <main id="main">
+      <section class="hero" id="top">
+        <div class="hero-copy">
+          <p class="eyebrow"><span>MIT</span> · July 16, 2026 · Workshop</p>
+          <h1>Creating a Personal Financial Planning Web App</h1>
+          <p class="hero-lede">
+            One idea. One shared prompt. Seven working websites—built by AI coding agents.
+          </p>
+          <div class="hero-actions">
+            <a class="button button-primary" href="#gallery">Explore all 7 apps</a>
+            <a class="button button-secondary" href="#process">See how we got there</a>
+          </div>
+        </div>
+
+        <div class="hero-visual" aria-label="Workshop journey: idea, prompt, then seven apps">
+          <div class="journey-card journey-idea">
+            <span class="journey-number">01</span>
+            <strong>Start with an idea</strong>
+            <small>No coding background required</small>
+          </div>
+          <div class="journey-line" aria-hidden="true"></div>
+          <div class="journey-card journey-prompt">
+            <span class="journey-number">02</span>
+            <strong>Shape the prompt</strong>
+            <small>Ask AI to make the idea buildable</small>
+          </div>
+          <div class="journey-line" aria-hidden="true"></div>
+          <div class="journey-card journey-apps">
+            <span class="journey-number">03</span>
+            <strong>Compare the results</strong>
+            <small>7 models · 7 interpretations</small>
+          </div>
+        </div>
+      </section>
+
+      <section class="intro section-narrow" aria-labelledby="big-question">
+        <p class="section-kicker">The experiment</p>
+        <h2 id="big-question">What happens when different AI models receive the same instructions?</h2>
+        <p>
+          This hands-on demonstration follows a simple workflow anyone can repeat: describe what you
+          want to build, improve the request with an AI assistant, then give the same detailed prompt
+          to several coding agents. Open the results below and look for differences in design,
+          usability, calculations, and interpretation.
+        </p>
+      </section>
+
+      <section class="process-section" id="process" aria-labelledby="process-title">
+        <div class="section-heading">
+          <div>
+            <p class="section-kicker">From plain language to working software</p>
+            <h2 id="process-title">The two-prompt process</h2>
+          </div>
+          <p>Use the copy buttons to try this workflow yourself.</p>
+        </div>
+
+        <article class="prompt-card">
+          <div class="prompt-meta">
+            <div>
+              <span class="step-pill">Step 1</span>
+              <h3>Ask for help writing the build prompt</h3>
+            </div>
+            <button class="copy-button" type="button" data-copy-target="starter-prompt">
+              <span aria-hidden="true">⧉</span> Copy prompt
+            </button>
+          </div>
+          <p class="prompt-note">Sent to ChatGPT 5.6</p>
+          <pre id="starter-prompt"><code>I want to use Codex to build a small educational web app for a workshop. The app will be a Personal Financial Planning Scenario Planner. It will demonstrate how an AI coding agent can turn an idea into a working website. I have no technical background, and I want to publish the website publicly using GitHub. What should my first prompt be?</code></pre>
+        </article>
+
+        <div class="process-connector" aria-hidden="true">
+          <span>ChatGPT turns the idea into a detailed specification</span>
+          <b>↓</b>
+        </div>
+
+        <article class="prompt-card prompt-card-detailed">
+          <div class="prompt-meta">
+            <div>
+              <span class="step-pill">Step 2</span>
+              <h3>Give every coding agent the same detailed prompt</h3>
+            </div>
+            <button class="copy-button" type="button" data-copy-target="build-prompt">
+              <span aria-hidden="true">⧉</span> Copy full prompt
+            </button>
+          </div>
+          <p class="prompt-note">The shared build specification</p>
+          <details>
+            <summary><span>Read the full prompt</span><span class="summary-hint">Click to expand</span></summary>
+            <pre id="build-prompt"><code>Build a complete, beginner-friendly educational web app called Personal Financial Planning Scenario Planner.
+
+Purpose
+
+This app will be demonstrated in a workshop to show how an AI coding agent can turn a plain-language idea into a working public website.
+
+I have no technical background, so please make sensible decisions for me, explain important choices in plain English, and avoid unnecessary complexity.
+
+Technical requirements
+
+- Build a static website that can be hosted free on GitHub Pages.
+- Use plain HTML, CSS, and JavaScript unless there is a compelling reason to use something more complex.
+- Do not require a backend, database, login, paid service, API key, or build server.
+- Store no personal data.
+- Make the site responsive and accessible.
+- Use clean, well-organized, commented code.
+- Create all necessary project files, including:
+  - index.html
+  - CSS and JavaScript files
+  - README.md
+  - .gitignore
+  - a suitable open-source license
+- Make sure the site works when opened locally and when deployed from a GitHub Pages repository.
+
+App experience
+
+Create a polished single-page scenario planner that helps a user explore a simplified personal financial plan.
+
+Include input sections for:
+
+1. Current age
+2. Planned retirement age
+3. Current annual income
+4. Current savings
+5. Monthly savings contribution
+6. Expected annual investment return
+7. Expected annual income growth
+8. Inflation rate
+9. Current annual expenses
+10. Expected retirement spending
+11. Optional major future expense, such as education, a home purchase, or travel
+12. The year or age when that major expense occurs
+
+Include three selectable scenarios:
+
+- Conservative
+- Moderate
+- Optimistic
+
+Each scenario should adjust assumptions such as investment return, income growth, and inflation. Clearly show the assumptions being used and allow users to customize them.
+
+Results
+
+As the user changes inputs, calculate and display:
+
+- Estimated savings at retirement
+- Estimated savings after the major future expense
+- Estimated first-year retirement spending
+- A simple estimate of whether the plan appears on track
+- The estimated gap or surplus
+- A year-by-year projection chart
+- A clear comparison of the three scenarios
+
+Use transparent, simplified calculations. Add tooltips or short explanations for financial terms and calculation assumptions.
+
+Include a prominent disclaimer explaining that this is an educational demonstration and not financial, tax, investment, or legal advice.
+
+Design
+
+Use a welcoming, professional workshop-friendly design.
+
+- Clear headings and generous spacing
+- Easy-to-read typography
+- Accessible form labels
+- Good keyboard navigation
+- Strong color contrast
+- Helpful validation messages
+- Mobile-friendly layout
+- No stock photography
+- No excessive animation
+
+Include example starting values so the app is useful immediately when opened.
+
+Add buttons to:
+
+- Reset the planner
+- Load an example scenario
+- Print or save the results as a PDF using the browser’s print feature
+
+Quality checks
+
+Before finishing:
+
+1. Test the calculations with several example values.
+2. Check for JavaScript errors.
+3. Check the mobile layout.
+4. Check keyboard accessibility.
+5. Confirm that no sensitive data is transmitted or stored.
+6. Confirm that all links and buttons work.
+7. Confirm that the project is compatible with GitHub Pages.
+
+Documentation and publishing
+
+Write a beginner-friendly README.md that explains:
+
+- What the app does
+- The project file structure
+- How to preview it locally
+- How to create a GitHub repository
+- How to upload or push the files
+- How to enable GitHub Pages
+- How to find the public website URL
+- How to make future changes using Codex
+
+At the end of your work, give me:
+
+1. A plain-English summary of what you built
+2. A list of the files you created
+3. Instructions for testing it
+4. Exact step-by-step instructions for publishing it publicly with GitHub Pages
+5. Any limitations or assumptions in the financial calculations
+
+Start by briefly outlining your implementation plan, and then create the complete app. Do not stop after giving instructions or sample code—create all required files and test the implementation.</code></pre>
+          </details>
+        </article>
+      </section>
+
+      <section class="gallery-section" id="gallery" aria-labelledby="gallery-title">
+        <div class="gallery-heading">
+          <div>
+            <p class="section-kicker">The results</p>
+            <h2 id="gallery-title">Same prompt. Seven interpretations.</h2>
+          </div>
+          <p>Open each live app in a new tab and compare how the models made decisions.</p>
+        </div>
+
+        <div class="model-grid">
+          <a class="model-card featured" href="https://zhaochaoyi.github.io/AI-educator-GPT5.6Sol-Medium/" target="_blank" rel="noopener noreferrer">
+            <div class="model-topline"><span class="builder">Built with Codex</span><span class="external" aria-hidden="true">↗</span></div>
+            <div class="model-orb orb-blue">5.6</div>
+            <h3>GPT-5.6</h3><p>Medium reasoning</p><span class="visit">Launch planner <b>→</b></span>
+          </a>
+          <a class="model-card" href="https://zhaochaoyi.github.io/AI-educator-GPT5.5-Medium/" target="_blank" rel="noopener noreferrer">
+            <div class="model-topline"><span class="builder">Built with Codex</span><span class="external" aria-hidden="true">↗</span></div>
+            <div class="model-orb orb-cyan">5.5</div>
+            <h3>GPT-5.5</h3><p>Medium reasoning</p><span class="visit">Launch planner <b>→</b></span>
+          </a>
+          <a class="model-card" href="https://zhaochaoyi.github.io/AI-educator-GPT5.4-Medium/" target="_blank" rel="noopener noreferrer">
+            <div class="model-topline"><span class="builder">Built with Codex</span><span class="external" aria-hidden="true">↗</span></div>
+            <div class="model-orb orb-teal">5.4</div>
+            <h3>GPT-5.4</h3><p>Medium reasoning</p><span class="visit">Launch planner <b>→</b></span>
+          </a>
+          <a class="model-card" href="https://zhaochaoyi.github.io/AI-educator-Fable5-Medium/" target="_blank" rel="noopener noreferrer">
+            <div class="model-topline"><span class="builder">Built with Claude Code</span><span class="external" aria-hidden="true">↗</span></div>
+            <div class="model-orb orb-coral">F5</div>
+            <h3>Fable 5</h3><p>Medium reasoning</p><span class="visit">Launch planner <b>→</b></span>
+          </a>
+          <a class="model-card" href="https://zhaochaoyi.github.io/AI-educator-Sonnet5-Medium/" target="_blank" rel="noopener noreferrer">
+            <div class="model-topline"><span class="builder">Built with Claude Code</span><span class="external" aria-hidden="true">↗</span></div>
+            <div class="model-orb orb-violet">S5</div>
+            <h3>Sonnet 5</h3><p>Medium reasoning</p><span class="visit">Launch planner <b>→</b></span>
+          </a>
+          <a class="model-card" href="https://zhaochaoyi.github.io/AI-educator-Opus4.8-Medium/" target="_blank" rel="noopener noreferrer">
+            <div class="model-topline"><span class="builder">Built with Claude Code</span><span class="external" aria-hidden="true">↗</span></div>
+            <div class="model-orb orb-gold">4.8</div>
+            <h3>Opus 4.8</h3><p>Medium reasoning</p><span class="visit">Launch planner <b>→</b></span>
+          </a>
+          <a class="model-card" href="https://zhaochaoyi.github.io/AI-educator-Haiku4.5/" target="_blank" rel="noopener noreferrer">
+            <div class="model-topline"><span class="builder">Built with Claude Code</span><span class="external" aria-hidden="true">↗</span></div>
+            <div class="model-orb orb-rose">4.5</div>
+            <h3>Haiku 4.5</h3><p>Default reasoning</p><span class="visit">Launch planner <b>→</b></span>
+          </a>
+        </div>
+
+        <aside class="discussion" aria-labelledby="discussion-title">
+          <div class="discussion-number">3</div>
+          <div>
+            <p class="section-kicker">Discuss together</p>
+            <h2 id="discussion-title">What did the models decide for us?</h2>
+          </div>
+          <ul>
+            <li>Which app makes the financial assumptions easiest to understand?</li>
+            <li>Where do the designs or calculations differ?</li>
+            <li>What would you ask the coding agent to improve next?</li>
+          </ul>
+        </aside>
+      </section>
+    </main>
+
+    <footer>
+      <div><strong>AI Educators Pilot</strong><span>MIT · July 16, 2026</span></div>
+      <p>Hands-On: Creating a Personal Financial Planning Web App</p>
+    </footer>
+
+    <div class="toast" role="status" aria-live="polite" aria-atomic="true"></div>
+  </body>
+</html>
