@@ -11,7 +11,8 @@ function showToast(message) {
 document.querySelectorAll("[data-copy-target]").forEach((button) => {
   button.addEventListener("click", async () => {
     const target = document.getElementById(button.dataset.copyTarget);
-    const text = target?.innerText.trim();
+    // textContent includes the prompt even when its <details> element is collapsed.
+    const text = target?.textContent.trim();
 
     if (!text) return;
 
@@ -19,12 +20,17 @@ document.querySelectorAll("[data-copy-target]").forEach((button) => {
       await navigator.clipboard.writeText(text);
       showToast("Prompt copied to clipboard");
     } catch {
-      const range = document.createRange();
-      range.selectNodeContents(target);
-      const selection = window.getSelection();
-      selection.removeAllRanges();
-      selection.addRange(range);
-      showToast("Prompt selected — press Ctrl/Cmd + C to copy");
+      // Fallback for local files and browsers that block the Clipboard API.
+      const textarea = document.createElement("textarea");
+      textarea.value = text;
+      textarea.setAttribute("readonly", "");
+      textarea.style.position = "fixed";
+      textarea.style.opacity = "0";
+      document.body.appendChild(textarea);
+      textarea.select();
+      const copied = document.execCommand("copy");
+      textarea.remove();
+      showToast(copied ? "Prompt copied to clipboard" : "Unable to copy prompt");
     }
   });
 });
