@@ -109,7 +109,8 @@ details[open] .summary-hint { visibility: hidden; }
 .activity-instructions p { max-width: 800px; margin: 0; color: var(--muted); }
 .activity-number { flex: 0 0 auto; display: grid; place-items: center; width: 52px; height: 52px; border-radius: 16px; background: var(--ink); color: #fff; font-family: Manrope, sans-serif; font-size: 1.35rem; font-weight: 800; }
 .choice-grid { display: grid; gap: .85rem; }
-.choice-grid-models { grid-template-columns: repeat(7, minmax(112px, 1fr)); overflow-x: auto; padding-bottom: .45rem; }
+.choice-grid-models { display: flex; flex-wrap: nowrap; overflow-x: auto; padding-bottom: .45rem; }
+.choice-grid-models .choice-card { flex: 1 0 112px; }
 .choice-grid-five { grid-template-columns: repeat(5, 1fr); }
 .choice-card { display: flex; min-width: 0; flex-direction: column; align-items: center; gap: .9rem; padding: 1.2rem .65rem 1rem; border: 1px solid var(--line); border-radius: 1rem; background: #fbfdff; text-decoration: none; box-shadow: 0 5px 14px rgba(16,42,67,.04); transition: transform .18s ease, box-shadow .18s ease, border-color .18s ease; }
 .choice-card:hover { transform: translateY(-4px); border-color: #8eafc5; box-shadow: 0 12px 26px rgba(16,42,67,.11); }
